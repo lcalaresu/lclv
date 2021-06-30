@@ -65,7 +65,7 @@ build:
   - HUGO_VERSION=latest
   preview_output_directory: _site
   install_dependencies_command: bundle install --path vendor/bundle
-  preview_docker_image: forestryio/hugo:latest
+  preview_docker_image: forestryio/hugo:node12
   mount_path: "/srv"
   instant_preview_command: bundle exec jekyll serve --config _config.yml,_config_staging.yml
     --drafts --unpublished --future --port 8080 --host 0.0.0.0 -d _site
