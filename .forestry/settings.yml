@@ -62,6 +62,7 @@ file_template: ":year:/:month:/:day:/:filename:"
 build:
   preview_env:
   - HUGO_ENV=staging
+  - HUGO_VERSION=0.84.3
   preview_output_directory: _site
   install_dependencies_command: bundle install --path vendor/bundle
   preview_docker_image: forestryio/hugo:latest
