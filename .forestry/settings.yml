@@ -44,6 +44,7 @@ sections:
   label: Les histoires
   create: documents
   match: "**/*"
+  new_doc_ext: md
 - type: jekyll-posts
   label: Blog
   create: all
