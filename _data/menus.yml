@@ -1,6 +1,9 @@
 ---
 main:
+- url: https://fr-fr.facebook.com/pages/category/Community/LES-CHATS-Libres-Vaudais-1955734831310857/
+  weight: 2
+  title: Facebook
 - identifier: home
   url: "/"
   weight: 1
-  title: Home
+  title: Accueil
