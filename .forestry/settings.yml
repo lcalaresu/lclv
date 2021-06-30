@@ -6,18 +6,58 @@ webhook_url:
 sections:
 - type: document
   path: FORESTRY-README.md
-  label: Welcome - First Steps
+  label: Bienvenue - Premiers pas
   read_only: true
-- type: jekyll-posts
-  label: Posts
-  create: all
+- type: heading
+  label: L'association
+- type: document
+  path: asso/presentation.md
+  label: Présentation
+  match: "**/*"
+  read_only: false
+- type: document
+  path: asso/benevoles.md
+  label: Les bénévoles
+  match: "**/*"
+- type: document
+  path: asso/nous-aider.md
+  label: Comment nous aider ?
+  match: "**/*"
+- type: heading
+  label: Adopter un chat
+- type: document
+  path: adopter/comment.md
+  label: Pourquoi et comment ?
+  match: "**/*"
+- type: document
+  path: adopter/annonces.md
+  label: Chats à l'adoption
+  match: "**/*"
+- type: document
+  path: adopter/nouvelles.md
+  label: Des nouvelles ...
+  match: "**/*"
+- type: heading
+  label: Actualités
 - type: directory
-  path: ''
-  label: Pages
-  create: all
-  match: "*.md"
+  path: blog/urgences
+  label: Urgences
+  create: documents
+  match: "**/*"
   exclude: "*README.md"
   new_doc_ext: md
+- type: directory
+  path: blog/histoires
+  label: Les histoires
+  create: documents
+  match: "**/*"
+- type: jekyll-posts
+  label: Blog
+  create: all
+- type: document
+  path: contact.md
+  label: Contact
+  match: "**/*"
 - type: document
   path: _config.yml
   label: Config
